@@ -1,0 +1,94 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    /* cabecera */
+    .header {
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        /* menu */
+        .header-nav {
+            background: #194350;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+            .logo {
+                background: #ff8882;
+                flex: 1 1 auto;
+            }
+            .nav {
+                background: #ff8882;
+                flex: 5 1 auto;
+            }
+            .social {
+                background: #ff8882;
+                flex: 1 1 auto;
+            }
+        /* cabecera imagen */
+        .header-img {
+            background: #ffc2b4;
+        }
+        h1 {
+            background: #9dbeb9;
+        }
+    /* seccion */
+    .section-main {
+        background: #000;
+        display: flex;
+    }
+        .articulos-section {
+            background: #23049d;
+            display: flex;
+            flex: 2 1 auto;
+            flex-flow: row wrap;
+        }
+            .articulo {
+                background: #aa2ee6;
+                flex: 1 1 40%;     
+            }
+            .nav-articulos {
+                background: #ff79cd;
+                flex: 1 1 100%;
+            }
+        /* publi aside */
+        .aside-ads {
+            background: #f0ebcc;
+            flex: 1 1 auto;
+        }
+            .publi {
+                background: #3d84b8;
+            }
+    /* footer */
+    .footer {
+        background: #000;
+    }
+        .nav-footer {
+            background: #e3cdc1;
+        }
+
+/* tablet */
+@media all and (max-width: 800px) {
+    .section-main {
+        background: yellow;
+        flex-direction: column;
+    }
+}
+
+/* movil */
+@media all and (max-width: 600px) {
+    .header-nav {
+        flex-direction: column;
+    }
+    .articulos-section {
+        flex-direction: column;
+    }
+}
