@@ -1,7 +1,12 @@
 * {
-    margin: 10px;
+    margin: 0;
     padding: 10px;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 .padre {
@@ -9,36 +14,60 @@
     flex-flow: column nowrap;
 }
 
-    /* cabecera */
-    .header {
-        background: #000;
+/* cabecera */
+.header {
+        background: url(/images/backgroundheader.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         flex-flow: column nowrap;
+        height: 300px;
     }
         /* menu */
         .header-nav {
-            background: #194350;
+            /* background: #194350; */
             display: flex;
             flex-flow: row nowrap;
+            height: auto;
+            align-items: center;
         }
             .logo {
-                background: #ff8882;
-                flex: 1 1 auto;
+                /* background: #ff8882; */
+                flex: 1 1 auto;            
             }
+                .logo img {
+                    width: 40%;
+                }
             .nav {
-                background: #ff8882;
+                /* background: #ff8882; */
+                color: #000;
                 flex: 5 1 auto;
             }
+                .nav a {
+                    text-decoration: none;
+                }
+                .nav a:hover {
+                    background-color: #111;
+                    color: white;
+                }
             .social {
-                background: #ff8882;
+                /* background: #ff8882; */
                 flex: 1 1 auto;
             }
+                .social a:hover {
+                    background-color: #111;
+                    color: white;
+                }
         /* cabecera imagen */
         .header-img {
-            background: #ffc2b4;
+            background: rgba(0, 0, 0, .1);
+            text-align: center;
         }
         h1 {
-            background: #9dbeb9;
+            /* background: #9dbeb9; */
+            font-family: 'Coustard', serif;
+            color: rgba(255, 0, 0, .5);
         }
     /* seccion */
     .section-main {
